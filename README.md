@@ -8,7 +8,7 @@
   and job control. Your shell must support only a very small number of built-in commands
   
 ### Features
-* Foreground jobs
+* #### Foreground jobs
 
   A "foreground job" is a command of the form ARG0 ARG1 ... ARGn . 
 
@@ -22,7 +22,7 @@
   
   xterm
   
-* Background jobs
+* #### Background jobs
 
   A "background job" is a command of the form ARG0 ARG1 ... ARGn & . 
   
@@ -36,7 +36,7 @@
   
   xterm &
   
-* Redirection of standard input and output
+* #### Redirection of standard input and output
 
   Both background and foreground jobs should be able to redirect standard input and output using "<" and ">", respectively. 
 
@@ -46,7 +46,7 @@
 
   ls -a -l -F > file2 &
 
-* Built-in commands
+* #### Built-in commands
 
   The main difference between your shell and an industrial-strength shell is the lack of built-in commands. 
   Your shell must handle the following commands internally, without creating a new process:
@@ -63,7 +63,7 @@
 
   Exit the shell.
   
-* Pipes
+* #### Pipes
 
   be able to handle a command pipeline of the form job1 | job2 | ... | jobn , where each job is a sequence of arguments (like a foreground job). 
   

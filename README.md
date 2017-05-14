@@ -48,8 +48,7 @@
 
 * #### Built-in commands
 
-  The main difference between your shell and an industrial-strength shell is the lack of built-in commands. 
-  Your shell must handle the following commands internally, without creating a new process:
+  handle the following commands:
 
   • cd newdir 
 

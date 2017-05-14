@@ -35,3 +35,13 @@
   rm -f -R dir1 dir2 file1 file2 &
   
   xterm &
+  
+* Redirection of standard input and output
+
+  Both background and foreground jobs should be able to redirect standard input and output using "<" and ">", respectively. 
+
+  For example,
+
+  ls -a -l -F > file1
+
+  ls -a -l -F > file2 &
